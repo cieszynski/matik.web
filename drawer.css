@@ -1,0 +1,71 @@
+nav.drawer {
+    transition-property: background-color;
+    background-color: rgba(0, 0, 0, 0);
+    will-change: background-color;
+    transition-duration: .4s;
+    pointer-events: none;
+    position: fixed;
+    color: #010101;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
+
+nav.drawer:focus-within,
+nav.drawer:focus {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+ol.drawer {
+    transition-property: left, background-color;
+    background-color: rgba(255, 255, 255, 0);
+    will-change: left, background-color;
+    transition-duration: .4s;
+    list-style-type: none;
+    pointer-events: all;
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    padding:0;
+    margin: 0;
+    top: 0;
+}
+
+ol.drawer a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px;
+    cursor: default;
+    color: #010101;
+    width: 100%;
+}
+
+ol.drawer a:focus,
+ol.drawer a:hover {
+    background-color: #ddd;
+    outline: none;
+}
+
+nav.drawer:focus-within>ol.drawer,
+nav.drawer:focus>ol.drawer {
+    background-color: rgba(255, 255, 255, 255);
+    box-shadow: 5px 0px 5px #141414;
+    left: 0px;
+}
+
+svg.drawer {
+    transition-property: transform;
+    transition-duration: .4s;
+    will-change: transform;
+    pointer-events: all;
+    padding: 16px;
+    fill: #c0c0c0;
+}
+
+nav.drawer:focus-within>svg.drawer,
+nav.drawer:focus>svg.drawer {
+    transform: rotate3d(0, 0, 1, 180deg);
+}
