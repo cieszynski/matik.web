@@ -1,7 +1,7 @@
 {
     "name": "MATiK",
     "short_name": "MATiK",
-    "start_url": ".",
+    "start_url": "index.html",
     "icons": [
         {
             "src": "icons/matik-192x192.png",

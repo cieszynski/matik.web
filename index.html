@@ -69,6 +69,12 @@
                     console.log('Registration failed with ' + error);
                 });
         }
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+  // Stash the event so it can be triggered later.
+  alert(8);
+});
+
     </script>
 </head>
 
