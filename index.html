@@ -4,13 +4,19 @@
 <head>
     <title>MATiK</title>
     <meta charset="utf-8" />
+    <meta name="theme-color" content="#212121"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <link rel="manifest" href="manifest.webmanifest">
     <link href="favicon.ico" rel="icon">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="drawer.css" />
+    <link rel="stylesheet" type="text/css" href="matik-math.css" />
     <style>
+        :root {
+            --math-color: #c0c0c0;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -56,6 +62,11 @@
             height: 100vh;
             pointer-events: none;
         }
+
+        main {
+            padding: 16px;
+            font-size: 20px;
+        }
     </style>
 
     <template id="start">
@@ -73,10 +84,10 @@
                 });
         }
 
-        window.addEventListener('beforeinstallprompt', (e) => {
-            // Stash the event so it can be triggered later.
-            alert(8);
-        });
+        /*         window.addEventListener('beforeinstallprompt', (e) => {
+                    // Stash the event so it can be triggered later.
+                    alert(8);
+                }); */
 
     </script>
 </head>
@@ -96,7 +107,111 @@
         <span role="presentation">MATiK</span>
     </header>
     <main>
+        <math-math>
+            <math-msqrt role="math" aria-label="6 geteilt durch 4" stretch="2">
+                <math-mfrac>
+                    <math-mi>Ag</math-mi>
+                    <math-mi>Fg</math-mi>
+                </math-mfrac>
+            </math-msqrt>
+        </math-math>
+        <math-math>
+            <math-msqrt>
+                <math-mi>Ag</math-mi>
+            </math-msqrt>
+        </math-math>
+        <math-math>
+            <math-msqrt role="math" aria-label="6 geteilt durch 4" stretch="3">
+                <math-mfrac>
+                    <math-mi>Agg</math-mi>
+                    <math-mfrac>
+                        <math-mi>Agdd</math-mi>
+                        <math-mi>Fgjjjjj</math-mi>
+                    </math-mfrac>
+                </math-mfrac>
+            </math-msqrt>
+        </math-math>
 
+        <math-math>
+            <math-mfenced open="(" close=")">
+                <math-mi>Agg</math-mi>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="(" close=")" stretch="2">
+                <math-mfrac>
+                    <math-mi>Ag</math-mi>
+                    <math-mi>Fg</math-mi>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="(" close=")" stretch="3">
+                <math-mfrac>
+                    <math-mi>Agg</math-mi>
+                    <math-mfrac>
+                        <math-mi>Agdd</math-mi>
+                        <math-mi>Fgjjjjj</math-mi>
+                    </math-mfrac>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="{" close="}">
+                <math-mi>Agg</math-mi>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="{" close="}" stretch="2">
+                <math-mfrac>
+                    <math-mi>Ag</math-mi>
+                    <math-mi>Fg</math-mi>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="{" close="}" stretch="3">
+                <math-mfrac>
+                    <math-mi>Agg</math-mi>
+                    <math-mfrac>
+                        <math-mi>Agdd</math-mi>
+                        <math-mi>Fgjjjjj</math-mi>
+                    </math-mfrac>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="[" close="]">
+                <math-mi>Agg</math-mi>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="[" close="]" stretch="2">
+                <math-mfrac>
+                    <math-mi>Ag</math-mi>
+                    <math-mi>Fg</math-mi>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
+
+        <math-math>
+            <math-mfenced open="[" close="]" stretch="3">
+                <math-mfrac>
+                    <math-mi>Agg</math-mi>
+                    <math-mfrac>
+                        <math-mi>Agdd</math-mi>
+                        <math-mi>Fgjjjjj</math-mi>
+                    </math-mfrac>
+                </math-mfrac>
+            </math-mfenced>
+        </math-math>
     </main>
 </body>
 
